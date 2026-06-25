@@ -1,0 +1,126 @@
+\documentclass[12pt,a4paper]{article}
+
+% ── Packages ──────────────────────────────────────────────
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[a4paper, top=2.5cm, bottom=2.5cm, left=3cm, right=2.5cm]{geometry}
+\usepackage{setspace}
+\usepackage{parskip}
+\usepackage{titlesec}
+\usepackage{fancyhdr}
+\usepackage[colorlinks=true, linkcolor=black, urlcolor=blue, citecolor=black]{hyperref}
+\usepackage{times}
+\usepackage{microtype}
+\usepackage{hanging}
+
+% ── Spacing ───────────────────────────────────────────────
+\onehalfspacing
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{8pt}
+
+% ── Section formatting ────────────────────────────────────
+\titleformat{\section}{\large\bfseries}{\thesection.}{0.5em}{}
+\titlespacing*{\section}{0pt}{18pt}{8pt}
+
+% ── Header / Footer ───────────────────────────────────────
+\pagestyle{fancy}
+\fancyhf{}
+\rhead{\small\itshape B201 Computer Science Lab --- Portfolio Report}
+\cfoot{\thepage}
+\renewcommand{\headrulewidth}{0.4pt}
+
+% ══════════════════════════════════════════════════════════
+\begin{document}
+
+% ── Title block ───────────────────────────────────────────
+\begin{titlepage}
+  \centering
+  \vspace*{3.5cm}
+  {\LARGE\bfseries Computer Science Portfolio\par}
+  \vspace{0.6cm}
+  {\large\itshape A Project Report for B201 Computer Science Lab\par}
+  \vspace{0.5cm}
+  {\normalsize Gisma University of Applied Sciences\par}
+  {\normalsize School of Computer Science\par}
+  \vspace{0.5cm}
+  {\normalsize GitHub: \url{https://github.com/Ashok2803}\par}
+  \vfill
+\end{titlepage}
+
+% ══════════════════════════════════════════════════════════
+\section{Introduction}
+
+This paper presents the design, development, and contents of the personal computer science portfolio that has been created as part of an application for a working student position. The objective of the portfolio is to demonstrate technical competence and to present potential employers with an overview of the skills and knowledge acquired in the field. The portfolio website has been deployed using GitHub Pages and is backed by an organised GitHub repository, which includes the curriculum vitae created in \LaTeX{} and a selection of technical exercises. The report highlights the key decisions made in the course of development, the tools and technologies used, and evaluates the outcome objectively.
+
+The portfolio can serve two purposes at once. First, it is a demonstration of what the candidate is able to do independently. Secondly, it is an evolving document that is updated and improved as skills develop over time. For this reason, the design and structure of the portfolio have been chosen with consideration of future maintenance needs, rather than merely for a single submission deadline. This approach reflects a professional attitude towards the quality and consistency of the work produced.
+
+% ══════════════════════════════════════════════════════════
+\section{Portfolio Website Structure and GitHub Repository}
+
+The portfolio website is accessible at the following URL: \url{https://Ashok2803.github.io/cs-portfolio}. The corresponding GitHub repository can be found at: \url{https://github.com/Ashok2803/cs-portfolio}. All materials presented on the website, including the curriculum vitae, are stored in this repository. It is organised into clearly labelled directories to ensure easy access for any reviewer.
+
+The repository consists of four directories. The root directory contains the main HTML file of the website, the README file, and the configuration file used by GitHub Pages to deploy the website automatically. The \texttt{assets} directory contains all the static files of the website, including stylesheets, images, and fonts. The \texttt{cv} directory contains the \LaTeX{} source files used to produce the curriculum vitae and the compiled PDF output. Finally, the \texttt{projects} directory contains subdirectories for each technical exercise, where each subdirectory includes a README that explains the purpose of the exercise and the steps required to run it.
+
+The structure of the website is divided into four sections: an about section that introduces the candidate, a skills section that summarises the core competencies, a projects section that links to the exercises in the repository, and a contact section. This structure was chosen because it allows a hiring manager to gather all relevant information without navigating between multiple pages, which is particularly helpful when evaluating a large number of portfolios in a short period of time.
+
+% ══════════════════════════════════════════════════════════
+\section{Design Decisions}
+
+Several key decisions were made when designing the portfolio, and each one was based on clear reasoning. The choice of GitHub Pages as the hosting platform was motivated by its direct integration with the version control workflow. The website is automatically deployed whenever changes are pushed to the main branch of the repository, which eliminates the need for a separate deployment process and reduces the risk of inconsistencies between the source code and the live site. GitHub Pages is also free to use for public repositories, making it a suitable choice for a student project.
+
+The visual design of the website was kept deliberately easy to read. A dark background with light text was chosen because this combination reduces eye strain and is consistent with the aesthetics commonly associated with technical and developer-oriented contexts. A sans-serif typeface was selected for body text to improve readability at small sizes on screen, while a monospaced typeface was used for code snippets to distinguish them clearly from the surrounding prose. The colour palette was restricted to three colours in order to maintain visual coherence and to avoid distracting attention from the content of the website.
+
+The decision to produce the curriculum vitae using \LaTeX{} rather than a standard word processing application was made because \LaTeX{} produces typographically superior output with precise control over spacing, alignment, and formatting. In addition, familiarity with \LaTeX{} is itself a demonstrable technical skill, valued in many academic and research environments. The curriculum vitae was created using the \texttt{moderncv} package, which provides a clean and professional template that can be compiled to PDF with minimal configuration.
+
+% ══════════════════════════════════════════════════════════
+\section{Tools and Technologies}
+
+The tools and technologies selected for developing the portfolio are widely used in the professional software development environment. HTML5 and CSS3 were used to build and style the website. No front-end framework was introduced, because the relatively simple structure of the site did not justify the additional dependency. Keeping the technology stack lean makes the site easier to maintain and reduces the likelihood of future compatibility issues. A small amount of JavaScript was used to implement smooth scrolling between sections, while all other interactions rely on native browser functionality.
+
+Git was used throughout the entire project for version control, and all commits were written with descriptive messages explaining the purpose of each change. \LaTeX{} was used to produce the curriculum vitae, as described in the previous section. Visual Studio Code served as the primary code editor, and its integrated terminal was used for all command-line operations. GitHub Actions was configured to validate the HTML and CSS files automatically on each push, which helped to identify minor errors early in the development process.
+
+% ══════════════════════════════════════════════════════════
+\section{Technical Exercises Included in the Portfolio}
+
+The portfolio includes three technical exercises, each selected to illustrate a different aspect of the skills covered in the module. The first exercise is an implementation of the binary search algorithm written in Python. It was included because it demonstrates an understanding of fundamental algorithmic thinking, including the ability to analyse the time complexity of a solution and to produce clean, well-commented code. The README for this exercise describes the logic of the algorithm, discusses its time and space complexity, and provides test cases that can be used to verify the implementation.
+
+The second exercise is a small relational database project that models a simple library management system. It includes the SQL schema, sample data, and a set of queries that retrieve useful information from the database. This exercise was selected because it demonstrates competence in data modelling and database querying, which are core skills for any computer science graduate entering the workforce. The third exercise is a Python script that performs basic data analysis and produces a simple visualisation of a publicly available dataset sourced from Kaggle. This exercise demonstrates the ability to work with real data and to communicate findings clearly through graphical output.
+
+% ══════════════════════════════════════════════════════════
+\section{Strengths and Weaknesses}
+
+The portfolio has several notable strengths. The repository is well organised and consistently documented, which makes the reviewing process straightforward and eliminates the need for additional explanation. The website is lightweight and loads quickly, even on slower internet connections. The technologies chosen are appropriate for the scale of the project, and the absence of unnecessary dependencies reduces the risk of technical problems. The curriculum vitae is professionally formatted and easy to read. The technical exercises are accompanied by documentation that explains not only what the code does but also why particular approaches were taken, demonstrating a level of critical reflection that goes beyond simply submitting a working solution.
+
+However, the portfolio also has weaknesses that should be acknowledged. The visual design, while clean, is relatively plain and could benefit from a more thoughtful use of layout and spacing to guide the reader's attention more effectively. The website is not fully responsive on very small screen sizes, which is an issue that would need to be resolved before the portfolio could be considered production-ready. Furthermore, the range of technical exercises is limited to three examples, which may not convey the full scope of the skills developed during the module. The absence of any collaborative project means that the portfolio does not currently demonstrate the ability to work effectively as part of a team, which is a competency that many employers consider important.
+
+% ══════════════════════════════════════════════════════════
+\section{Future Improvements}
+
+Several improvements could be made to the portfolio given more time. The most important would be to extend the technical exercises to cover a wider range of topics, including object-oriented design, web development, and networking fundamentals. This would provide a more complete picture of overall technical ability and would make the portfolio more competitive for positions requiring diverse skills. It would also be beneficial to include at least one collaborative project, hosted on a shared repository where the contributions of different team members are clearly visible in the commit history.
+
+On the technical side, introducing a responsive layout using CSS Grid or Flexbox would ensure the website displays correctly across all device sizes. Adding a dark mode toggle implemented in JavaScript would improve accessibility and demonstrate a higher level of front-end development skill. It would also be worthwhile to introduce automated testing for the Python exercises using the \texttt{pytest} framework, which would improve the robustness of the code and further demonstrate an understanding of good software development practices. Finally, setting up a continuous integration pipeline to run these tests automatically on every push would bring the repository closer to professional standards.
+
+% ══════════════════════════════════════════════════════════
+\section{Conclusion}
+
+This report has described the design and implementation of a personal computer science portfolio created for the purpose of applying to a working student position. The portfolio includes a GitHub Pages website, a well-structured repository, a \LaTeX-produced curriculum vitae, and three technical exercises that demonstrate key skills covered in the module. The decisions made throughout the development of the portfolio were guided by the principles of simplicity, maintainability, and professional presentation. The portfolio has clear strengths as well as identifiable weaknesses that will be addressed in future iterations. The project has been a valuable opportunity to consolidate technical skills and to reflect on the practices and habits that define high-quality work in computer science.
+
+% ══════════════════════════════════════════════════════════
+\section*{References}
+\addcontentsline{toc}{section}{References}
+
+\begin{hangparas}{1.5em}{1}
+
+GitHub (2024) \textit{GitHub Pages documentation}. Available at: \url{https://docs.github.com/en/pages} (Accessed: 25 June 2026).
+
+Lamport, L. (1994) \textit{\LaTeX: A document preparation system}. 2nd edn. Reading, MA: Addison-Wesley.
+
+Loeliger, J. and McCullough, M. (2012) \textit{Version control with Git}. 2nd edn. Sebastopol, CA: O'Reilly Media.
+
+McKinney, W. (2022) \textit{Python for data analysis}. 3rd edn. Sebastopol, CA: O'Reilly Media.
+
+The Comprehensive \TeX{} Archive Network (2024) \textit{moderncv -- A modern curriculum vitae class}. Available at: \url{https://ctan.org/pkg/moderncv} (Accessed: 25 June 2026).
+
+\end{hangparas}
+
+\end{document}
