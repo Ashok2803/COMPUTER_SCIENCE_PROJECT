@@ -1,0 +1,624 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ashok Hanumanram Prajapati | CS Student & Developer Portfolio</title>
+    <meta name="description" content="Personal portfolio of Ashok Hanumanram Prajapati, a Computer Science student at Gisma University of Applied Sciences, Berlin. Showcasing projects, skills, education, and certifications.">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Background grid decoration -->
+    <div class="grid-decoration"></div>
+    <div class="glow-orb orb-1"></div>
+    <div class="glow-orb orb-2"></div>
+
+    <!-- Navigation Header -->
+    <header class="header">
+        <div class="container header-container">
+            <a href="#" class="logo-container">
+                <div class="logo-avatar">AP</div>
+                <div class="logo-text">
+                    <span class="logo-name">Ashok Prajapati</span>
+                    <span class="logo-sub">CS Student</span>
+                </div>
+            </a>
+            <nav class="nav">
+                <ul class="nav-list">
+                    <li><a href="#profile" class="nav-link">Profile</a></li>
+                    <li><a href="#skills" class="nav-link">Skills</a></li>
+                    <li><a href="#education" class="nav-link">Education</a></li>
+                    <li><a href="#certifications" class="nav-link">Certifications</a></li>
+                    <li><a href="#projects" class="nav-link">Projects</a></li>
+                    <li><a href="#contact" class="nav-link">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="header-actions">
+                <button id="theme-toggle" class="theme-toggle-btn" aria-label="Toggle dark/light theme">
+                    <!-- Sun Icon -->
+                    <svg class="sun-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                    <!-- Moon Icon -->
+                    <svg class="moon-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                </button>
+                <button class="mobile-nav-toggle" aria-label="Toggle navigation menu">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero-section">
+        <div class="container hero-container">
+            <div class="hero-content">
+                <span class="hero-tag">Available for Internships & Projects</span>
+                <h1 class="hero-title">
+                    Hi, I'm <span class="text-gradient">Ashok Prajapati</span>
+                </h1>
+                <p class="hero-subtitle">
+                    Computer Science Student at <strong>Gisma University of Applied Sciences</strong>, based in Berlin.
+                </p>
+                <p class="hero-description">
+                    Passionate about building clean, efficient solutions with Python, modern web development, and database systems. Focused on software craft and continuous learning.
+                </p>
+                <div class="hero-btns">
+                    <a href="#contact" class="btn btn-primary">Get In Touch</a>
+                    <a href="#projects" class="btn btn-secondary">View Work</a>
+                </div>
+                <div class="hero-contact-quick">
+                    <a href="mailto:ashokprajapati6115@gmail.com" class="quick-link">
+                        <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+                        <span>ashokprajapati6115@gmail.com</span>
+                    </a>
+                    <a href="tel:+491706145559" class="quick-link">
+                        <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+                        <span>+49 170 6145559</span>
+                    </a>
+                    <a href="https://github.com/Ashok2803" target="_blank" rel="noopener noreferrer" class="quick-link">
+                        <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+                        <span>github.com/Ashok2803</span>
+                    </a>
+                </div>
+            </div>
+            
+            <!-- Beautiful Badge Card for Profile Overview -->
+            <div class="hero-card-container">
+                <div class="hero-glass-card">
+                    <div class="card-header">
+                        <div class="window-dot red"></div>
+                        <div class="window-dot yellow"></div>
+                        <div class="window-dot green"></div>
+                    </div>
+                    <div class="card-body">
+                        <pre><code><span class="code-keyword">const</span> developer = {
+  name: <span class="code-string">"Ashok Prajapati"</span>,
+  role: <span class="code-string">"Computer Science Student"</span>,
+  university: <span class="code-string">"Gisma University"</span>,
+  location: <span class="code-string">"Berlin, Germany"</span>,
+  skills: [
+    <span class="code-string">"Python"</span>, <span class="code-string">"HTML/CSS/JS"</span>,
+    <span class="code-string">"SQL"</span>, <span class="code-string">"Git/GitHub"</span>, <span class="code-string">"LaTeX"</span>
+  ],
+  passions: [
+    <span class="code-string">"Clean Code"</span>,
+    <span class="code-string">"Continuous Learning"</span>
+  ]
+};</code></pre>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Main Content -->
+    <main>
+        
+        <!-- Profile / About & Personal Details -->
+        <section id="profile" class="section reveal-on-scroll">
+            <div class="container">
+                <h2 class="section-title">Profile & Personal Info</h2>
+                <div class="grid-2-col">
+                    <div class="profile-about">
+                        <h3 class="subsection-title">About Me</h3>
+                        <p class="about-text">
+                            I am a highly motivated Computer Science student at <strong>Gisma University of Applied Sciences</strong> in Berlin, Germany. With a solid foundation in Python programming, web technology, database design, and Git-based version control, I am passionate about engineering clean and maintainable software.
+                        </p>
+                        <p class="about-text">
+                            Originally from India, I am eager to apply my learning through hands-on experience, collaborative projects, and internship opportunities in the European tech ecosystem.
+                        </p>
+                        
+                        <div class="strengths-wrapper">
+                            <h4 class="mini-title">Core Strengths</h4>
+                            <ul class="strengths-list">
+                                <li>
+                                    <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2.5" class="accent-color"><polyline points="20 6 9 17 4 12"/></svg>
+                                    <span><strong>Multicultural Communicator</strong>: Thriving in international & diverse environments</span>
+                                </li>
+                                <li>
+                                    <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2.5" class="accent-color"><polyline points="20 6 9 17 4 12"/></svg>
+                                    <span><strong>Self-Motivated & Positive</strong>: Enthusiastic about resolving problems and learning</span>
+                                </li>
+                                <li>
+                                    <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2.5" class="accent-color"><polyline points="20 6 9 17 4 12"/></svg>
+                                    <span><strong>Fast Learner & Adaptable</strong>: Quickly picks up new frameworks, libraries, and workflows</span>
+                                </li>
+                                <li>
+                                    <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2.5" class="accent-color"><polyline points="20 6 9 17 4 12"/></svg>
+                                    <span><strong>Detail-Oriented Team Player</strong>: Highly collaborative with a focus on code readability</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <div class="profile-details-card">
+                        <h3 class="subsection-title">Personal Details</h3>
+                        <div class="detail-grid">
+                            <div class="detail-item">
+                                <span class="detail-label">Date of Birth</span>
+                                <span class="detail-value">27 October 2004</span>
+                            </div>
+                            <div class="detail-item">
+                                <span class="detail-label">Nationality</span>
+                                <span class="detail-value">Indian</span>
+                            </div>
+                            <div class="detail-item">
+                                <span class="detail-label">Gender</span>
+                                <span class="detail-value">Male</span>
+                            </div>
+                            <div class="detail-item">
+                                <span class="detail-label">Marital Status</span>
+                                <span class="detail-value">Single</span>
+                            </div>
+                            <div class="detail-item">
+                                <span class="detail-label">Languages Spoken</span>
+                                <div class="languages-tags">
+                                    <span class="lang-tag">English <small>(C1 Advanced)</small></span>
+                                    <span class="lang-tag">German <small>(A2 Elementary)</small></span>
+                                    <span class="lang-tag">Hindi <small>(Native)</small></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Technical Skills & Languages interactive -->
+        <section id="skills" class="section bg-alt reveal-on-scroll">
+            <div class="container">
+                <h2 class="section-title">Technical Skills</h2>
+                <p class="section-subtitle">A snapshot of my technical proficiencies and coding experience.</p>
+                
+                <div class="skills-grid">
+                    <!-- Python Card -->
+                    <div class="skill-card">
+                        <div class="skill-icon-wrapper">
+                            <!-- Python SVG -->
+                            <svg viewBox="0 0 24 24" width="36" height="36" fill="currentColor">
+                                <path d="M11.928 0C5.625 0 6.004 2.732 6.004 2.732l.006 2.822h5.992v.842H3.66S0 5.867 0 12.115c0 6.25 3.237 6.006 3.237 6.006h1.927v-2.7s-.066-3.227 3.184-3.227h5.92s3.167.042 3.167-3.11V3.197S17.848 0 11.928 0z" />
+                                <path d="M12.072 24c6.303 0 5.924-2.73 5.924-2.73l-.006-2.824H12v-.84h8.34S24 18.133 24 11.886c0-6.25-3.237-6.006-3.237-6.006h-1.927v2.7s.066 3.227-3.184 3.227h-5.92s-3.167-.042-3.167 3.11v5.887S6.152 24 12.072 24z" />
+                            </svg>
+                        </div>
+                        <h3>Python</h3>
+                        <p class="skill-desc">Primary language used for algorithms, scripting, lab projects, and data operations.</p>
+                        <div class="skill-progress-container">
+                            <div class="skill-progress-bar" data-progress="90%"></div>
+                        </div>
+                        <span class="skill-percentage">90%</span>
+                    </div>
+
+                    <!-- Web Tech Card -->
+                    <div class="skill-card">
+                        <div class="skill-icon-wrapper">
+                            <!-- Code SVG -->
+                            <svg viewBox="0 0 24 24" width="36" height="36" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <polyline points="16 18 22 12 16 6"></polyline>
+                                <polyline points="8 6 2 12 8 18"></polyline>
+                            </svg>
+                        </div>
+                        <h3>HTML / CSS / JavaScript</h3>
+                        <p class="skill-desc">Building responsive web pages, interactive styling, DOM manipulations, and API fetching.</p>
+                        <div class="skill-progress-container">
+                            <div class="skill-progress-bar" data-progress="85%"></div>
+                        </div>
+                        <span class="skill-percentage">85%</span>
+                    </div>
+
+                    <!-- Git / GitHub Card -->
+                    <div class="skill-card">
+                        <div class="skill-icon-wrapper">
+                            <!-- Git SVG -->
+                            <svg viewBox="0 0 24 24" width="36" height="36" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <circle cx="18" cy="18" r="3"></circle>
+                                <circle cx="6" cy="6" r="3"></circle>
+                                <circle cx="6" cy="18" r="3"></circle>
+                                <path d="M18 15V9a4 4 0 0 0-4-4H9"></path>
+                                <line x1="6" y1="9" x2="6" y2="15"></line>
+                            </svg>
+                        </div>
+                        <h3>Git & GitHub</h3>
+                        <p class="skill-desc">Version control, managing branches, code merges, pull requests, and GitHub Pages deployments.</p>
+                        <div class="skill-progress-container">
+                            <div class="skill-progress-bar" data-progress="80%"></div>
+                        </div>
+                        <span class="skill-percentage">80%</span>
+                    </div>
+
+                    <!-- SQL Card -->
+                    <div class="skill-card">
+                        <div class="skill-icon-wrapper">
+                            <!-- Database SVG -->
+                            <svg viewBox="0 0 24 24" width="36" height="36" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <ellipse cx="12" cy="5" rx="9" ry="3"></ellipse>
+                                <path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"></path>
+                                <path d="M3 12c0 1.66 4 3 9 3s9-1.34 9-3"></path>
+                            </svg>
+                        </div>
+                        <h3>SQL & Databases</h3>
+                        <p class="skill-desc">Designing schemas, querying tables, normalization, and connecting databases with python backends.</p>
+                        <div class="skill-progress-container">
+                            <div class="skill-progress-bar" data-progress="75%"></div>
+                        </div>
+                        <span class="skill-percentage">75%</span>
+                    </div>
+
+                    <!-- LaTeX Card -->
+                    <div class="skill-card">
+                        <div class="skill-icon-wrapper">
+                            <!-- File Text SVG -->
+                            <svg viewBox="0 0 24 24" width="36" height="36" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+                                <polyline points="14 2 14 8 20 8"></polyline>
+                                <line x1="16" y1="13" x2="8" y2="13"></line>
+                                <line x1="16" y1="17" x2="8" y2="17"></line>
+                                <polyline points="10 9 9 9 8 9"></polyline>
+                            </svg>
+                        </div>
+                        <h3>LaTeX</h3>
+                        <p class="skill-desc">Typesetting scientific documents, CV layout creation, and writing academic reports.</p>
+                        <div class="skill-progress-container">
+                            <div class="skill-progress-bar" data-progress="80%"></div>
+                        </div>
+                        <span class="skill-percentage">80%</span>
+                    </div>
+
+                    <!-- Tally Card -->
+                    <div class="skill-card">
+                        <div class="skill-icon-wrapper">
+                            <!-- Calculator/Briefcase SVG -->
+                            <svg viewBox="0 0 24 24" width="36" height="36" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <rect x="2" y="7" width="20" height="14" rx="2" ry="2"></rect>
+                                <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path>
+                            </svg>
+                        </div>
+                        <h3>Tally Prime with GST</h3>
+                        <p class="skill-desc">Accounting, invoicing, tax configurations, and business ledger management certifications.</p>
+                        <div class="skill-progress-container">
+                            <div class="skill-progress-bar" data-progress="70%"></div>
+                        </div>
+                        <span class="skill-percentage">70%</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Education timeline -->
+        <section id="education" class="section reveal-on-scroll">
+            <div class="container">
+                <h2 class="section-title">Education Journey</h2>
+                
+                <div class="timeline">
+                    <!-- BSc -->
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-date">Oct 2024 – Present</div>
+                        <div class="timeline-content">
+                            <h3>BSc Computer Science</h3>
+                            <p class="timeline-org">Gisma University of Applied Sciences, Berlin, Germany</p>
+                            <p class="timeline-desc">
+                                Pursuing an international degree covering foundational computing, algorithms, programming paradigms, databases, and software engineering. Engaging in lab projects and team research.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- HSC -->
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-date">Jun 2022 – Jun 2023</div>
+                        <div class="timeline-content">
+                            <h3>Higher Secondary Certificate (H.S.C)</h3>
+                            <p class="timeline-org">LDR International School (Cambridge), Gandhinagar, India</p>
+                            <p class="timeline-desc">
+                                Completed higher secondary education focusing on scientific studies. Obtained score: <strong>67%</strong>.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- SSC -->
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-date">2020 – 2022</div>
+                        <div class="timeline-content">
+                            <h3>Secondary School Certificate (S.S.C)</h3>
+                            <p class="timeline-org">Gandhinagar International Public School, India</p>
+                            <p class="timeline-desc">
+                                Completed secondary education. Obtained score: <strong>79%</strong>.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Certifications with beautiful visual cards -->
+        <section id="certifications" class="section bg-alt reveal-on-scroll">
+            <div class="container">
+                <h2 class="section-title">Certifications & Credentials</h2>
+                
+                <div class="certifications-grid">
+                    <!-- COPA -->
+                    <div class="cert-card">
+                        <div class="cert-header">
+                            <span class="cert-tag">Tech Diploma</span>
+                            <span class="cert-date">Oct 2023 – Oct 2024</span>
+                        </div>
+                        <h3>Computer Operator & Programming Assistant (COPA)</h3>
+                        <p class="cert-org">Dr. A.P.J Abdul Kalam NISD, Mansa, India</p>
+                        <div class="cert-footer">
+                            <span class="cert-badge">Verified</span>
+                        </div>
+                    </div>
+
+                    <!-- CCC -->
+                    <div class="cert-card">
+                        <div class="cert-header">
+                            <span class="cert-tag">Core Concepts</span>
+                            <span class="cert-date">Oct 2024 – Jan 2025</span>
+                        </div>
+                        <h3>Certificate in Computer Concepts (CCC)</h3>
+                        <p class="cert-org">Dr. A.P.J Abdul Kalam NISD, Kalol, India</p>
+                        <div class="cert-footer">
+                            <span class="cert-badge grade">Grade A</span>
+                        </div>
+                    </div>
+
+                    <!-- Tally Prime -->
+                    <div class="cert-card">
+                        <div class="cert-header">
+                            <span class="cert-tag">Financial Tech</span>
+                            <span class="cert-date">Jan 2025 – Apr 2025</span>
+                        </div>
+                        <h3>Tally Prime with GST</h3>
+                        <p class="cert-org">Dr. A.P.J Abdul Kalam NISD, Kalol, India</p>
+                        <div class="cert-footer">
+                            <span class="cert-badge grade">Grade A</span>
+                        </div>
+                    </div>
+
+                    <!-- IELTS -->
+                    <div class="cert-card">
+                        <div class="cert-header">
+                            <span class="cert-tag">Language Test</span>
+                            <span class="cert-date">2024</span>
+                        </div>
+                        <h3>IELTS Academic</h3>
+                        <p class="cert-org">British Council / IDP</p>
+                        <div class="ielts-breakdown">
+                            <div class="score-overall">
+                                <span class="score-num">6.5</span>
+                                <span class="score-label">Overall</span>
+                            </div>
+                            <div class="score-subscores">
+                                <div>Listening: <span>7.5</span></div>
+                                <div>Reading: <span>6.0</span></div>
+                                <div>Writing: <span>6.0</span></div>
+                                <div>Speaking: <span>5.5</span></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects section -->
+        <section id="projects" class="section reveal-on-scroll">
+            <div class="container">
+                <h2 class="section-title">Projects</h2>
+                
+                <div class="projects-grid">
+                    <!-- Project 1: Banking System -->
+                    <div class="project-card">
+                        <div class="project-img-placeholder">
+                            <div class="project-icon">
+                                <svg viewBox="0 0 24 24" width="48" height="48" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="10" width="18" height="12" rx="2"/><path d="M12 22V10M12 2L4 6v4h16V6L12 2z"/></svg>
+                            </div>
+                        </div>
+                        <div class="project-body">
+                            <div class="project-header">
+                                <h3>Banking System — Python</h3>
+                                <span class="project-year">2026</span>
+                            </div>
+                            <p class="project-desc">
+                                A CLI banking app in Python supporting customer creation, account management, deposits, withdrawals, and transfers. Features transaction logging with UUIDs, timestamps, and CSV-based data persistence.
+                            </p>
+                            <div class="project-tags">
+                                <span>Python</span>
+                                <span>OOP</span>
+                                <span>CSV Data Persistence</span>
+                                <span>CLI Design</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="https://github.com/Ashok2803/GISMA-PYTHON-REPORT" target="_blank" rel="noopener noreferrer" class="project-link-btn">
+                                    <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+                                    Code Repo
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project 2: Databases & Big Data -->
+                    <div class="project-card">
+                        <div class="project-img-placeholder">
+                            <div class="project-icon">
+                                <svg viewBox="0 0 24 24" width="48" height="48" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><ellipse cx="12" cy="5" rx="9" ry="3"></ellipse><path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"></path><path d="M3 12c0 1.66 4 3 9 3s9-1.34 9-3"></path></svg>
+                            </div>
+                        </div>
+                        <div class="project-body">
+                            <div class="project-header">
+                                <h3>Databases & Big Data</h3>
+                                <span class="project-year">2026</span>
+                            </div>
+                            <p class="project-desc">
+                                Coursework repository covering relational database design and big data concepts, including structured SQL exercises and data management principles as part of the Gisma CS curriculum.
+                            </p>
+                            <div class="project-tags">
+                                <span>SQL</span>
+                                <span>Relational Databases</span>
+                                <span>Big Data Concepts</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="https://github.com/Ashok2803/Databases-Big-Data" target="_blank" rel="noopener noreferrer" class="project-link-btn">
+                                    <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+                                    Code Repo
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project 3: CS Portfolio Website -->
+                    <div class="project-card">
+                        <div class="project-img-placeholder">
+                            <div class="project-icon">
+                                <svg viewBox="0 0 24 24" width="48" height="48" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2" ry="2"/><line x1="9" y1="3" x2="9" y2="21"/><line x1="9" y1="9" x2="21" y2="9"/><line x1="9" y1="15" x2="21" y2="15"/></svg>
+                            </div>
+                        </div>
+                        <div class="project-body">
+                            <div class="project-header">
+                                <h3>CS Portfolio Website</h3>
+                                <span class="project-year">2026</span>
+                            </div>
+                            <p class="project-desc">
+                                Personal portfolio hosted on GitHub Pages showcasing projects, CV, and technical skills. Built with HTML and CSS, version-controlled with Git.
+                            </p>
+                            <div class="project-tags">
+                                <span>HTML</span>
+                                <span>CSS</span>
+                                <span>Git</span>
+                                <span>GitHub Pages</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="https://github.com/Ashok2803" target="_blank" rel="noopener noreferrer" class="project-link-btn">
+                                    <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+                                    Code Repo
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="section bg-alt reveal-on-scroll">
+            <div class="container">
+                <h2 class="section-title">Get In Touch</h2>
+                <p class="section-subtitle">Have an opportunity, a question, or want to collaborate? Send a message!</p>
+                
+                <div class="grid-2-col">
+                    <div class="contact-info">
+                        <h3>Connect With Me</h3>
+                        <p class="contact-info-desc">
+                            Feel free to reach out via email, phone, or github. I am always open to discussing new opportunities, internship offers, and academic collaborations.
+                        </p>
+                        
+                        <div class="contact-channels">
+                            <div class="contact-channel-item">
+                                <div class="channel-icon">
+                                    <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+                                </div>
+                                <div class="channel-content">
+                                    <h4>Email</h4>
+                                    <a href="mailto:ashokprajapati6115@gmail.com">ashokprajapati6115@gmail.com</a>
+                                </div>
+                            </div>
+                            <div class="contact-channel-item">
+                                <div class="channel-icon">
+                                    <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+                                </div>
+                                <div class="channel-content">
+                                    <h4>Phone / WhatsApp</h4>
+                                    <a href="tel:+491706145559">+49 170 6145559</a>
+                                </div>
+                            </div>
+                            <div class="contact-channel-item">
+                                <div class="channel-icon">
+                                    <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+                                </div>
+                                <div class="channel-content">
+                                    <h4>Location</h4>
+                                    <span>Berlin, Germany</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <form id="contact-form" class="contact-form-element">
+                        <div class="form-group">
+                            <label for="name">Your Name</label>
+                            <input type="text" id="name" name="name" required placeholder="John Doe">
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Your Email</label>
+                            <input type="email" id="email" name="email" required placeholder="john@example.com">
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea id="message" name="message" rows="5" required placeholder="Hi Ashok, I would love to talk about..."></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-block">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer-container">
+            <p>&copy; 2026 Ashok Hanumanram Prajapati. All rights reserved.</p>
+            <div class="footer-links">
+                <a href="https://github.com/Ashok2803" target="_blank" rel="noopener noreferrer">GitHub</a>
+                <a href="#profile">Profile</a>
+                <a href="#projects">Projects</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Toast Notification -->
+    <div id="toast" class="toast-notification">Message sent successfully!</div>
+
+    <!-- Script -->
+    <script src="script.js"></script>
+</body>
+</html>
