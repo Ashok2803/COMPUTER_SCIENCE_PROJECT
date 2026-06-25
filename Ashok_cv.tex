@@ -1,0 +1,208 @@
+\documentclass[a4paper,9pt]{article}
+
+\usepackage[top=0pt, bottom=0pt, left=0pt, right=0pt]{geometry}
+\usepackage{xcolor}
+\usepackage{tikz}
+\usepackage{hyperref}
+\usepackage{enumitem}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{calc}
+
+\pagestyle{empty}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{0pt}
+
+\definecolor{sidecolor}{RGB}{25, 42, 78}
+\definecolor{maincolor}{RGB}{20, 110, 180}
+\definecolor{accentcolor}{RGB}{240, 168, 0}
+\definecolor{lightbg}{RGB}{245, 247, 252}
+\definecolor{textgray}{RGB}{70, 70, 80}
+
+\hypersetup{colorlinks=true, urlcolor=maincolor}
+
+\newlength{\sideW}
+\setlength{\sideW}{6.3cm}
+\newlength{\mainW}
+\setlength{\mainW}{\paperwidth-\sideW}
+
+\newcommand{\sideheading}[1]{%
+  \vspace{5pt}%
+  {\color{accentcolor}\rule{\linewidth}{1pt}}\\[2pt]%
+  {\color{white}\bfseries\small #1}\\[2pt]%
+}
+
+\newcommand{\mainheading}[1]{%
+  \vspace{6pt}%
+  {\color{maincolor}\bfseries\normalsize #1}\\[-3pt]%
+  {\color{maincolor}\rule{\linewidth}{1pt}}\\[3pt]%
+}
+
+\newcommand{\skillbar}[2]{%
+  {\color{white}\footnotesize #1}\par%
+  \vspace{1pt}%
+  \begin{tikzpicture}
+    \fill[white!20!sidecolor] (0,0) rectangle (\linewidth-0.01cm, 0.13cm);
+    \fill[accentcolor] (0,0) rectangle (#2*\linewidth-#2*0.01cm, 0.13cm);
+  \end{tikzpicture}\par%
+  \vspace{3pt}%
+}
+
+\begin{document}
+
+% ===== BACKGROUND PANELS =====
+\begin{tikzpicture}[remember picture, overlay]
+  \fill[sidecolor] (current page.north west) rectangle ([xshift=\sideW]current page.south west);
+  \fill[lightbg]   ([xshift=\sideW]current page.north west) rectangle (current page.south east);
+  \fill[maincolor] (current page.north west) rectangle ([yshift=-2.9cm]current page.north east);
+\end{tikzpicture}
+
+% ===== HEADER =====
+\begin{minipage}[t]{\paperwidth}
+\vspace{0pt}
+\begin{minipage}[t]{2.8cm}
+\vspace{0.15cm}
+\hspace{0.4cm}%
+\begin{tikzpicture}
+  \fill[accentcolor] (0,0) circle (1.1cm);
+  \node[white, font=\bfseries\large] at (0,0) {AP};
+\end{tikzpicture}
+\end{minipage}%
+\begin{minipage}[t]{\paperwidth-3.0cm}
+\vspace{0.25cm}
+{\color{white}\fontsize{20}{24}\selectfont\bfseries Ashok Hanumanram Prajapati}\par
+\vspace{2pt}
+{\color{accentcolor}\normalsize Computer Science Student --- Gisma University of Applied Sciences}\par
+\vspace{3pt}
+{\color{white}\footnotesize
+  Berlin, Germany \quad\textbullet\quad +49 170 6145559 \quad\textbullet\quad
+  \href{mailto:ashokprajapati6115@gmail.com}{\color{accentcolor}ashokprajapati6115@gmail.com}
+  \quad\textbullet\quad
+  \href{https://github.com/Ashok2803}{\color{accentcolor}github.com/Ashok2803}
+}
+\end{minipage}
+\end{minipage}
+
+\vspace{0.15cm}
+
+% ===== TWO COLUMNS =====
+% LEFT SIDEBAR
+\begin{minipage}[t]{\sideW}
+\vspace{0pt}
+\hspace{0.35cm}%
+\begin{minipage}[t]{\sideW-0.7cm}
+\vspace{4pt}
+
+\sideheading{Technical Skills}
+\skillbar{Python}{0.78}
+\skillbar{HTML / CSS / JavaScript}{0.72}
+\skillbar{Git \& GitHub}{0.74}
+\skillbar{SQL \& Databases}{0.66}
+\skillbar{LaTeX}{0.70}
+\skillbar{Tally Prime with GST}{0.71}
+
+\sideheading{Languages}
+\skillbar{English --- C1 Advanced}{0.85}
+\skillbar{German --- A2 Elementary}{0.28}
+\skillbar{Hindi --- Native}{1.00}
+
+\sideheading{Personal Info}
+{\color{white}\footnotesize
+\textbf{Date of Birth:} 27 October 2004\\[2pt]
+\textbf{Nationality:} Indian\\[2pt]
+\textbf{Gender:} Male\\[2pt]
+\textbf{Marital Status:} Single\\[2pt]
+}
+
+\sideheading{Strengths}
+{\color{white}\footnotesize
+\begin{itemize}[leftmargin=0.9em, itemsep=2pt, topsep=0pt]
+  \item[\textcolor{accentcolor}{\textbullet}] Multicultural communicator
+  \item[\textcolor{accentcolor}{\textbullet}] Self-motivated \& positive attitude
+  \item[\textcolor{accentcolor}{\textbullet}] Fast learner, highly adaptable
+  \item[\textcolor{accentcolor}{\textbullet}] Detail-oriented team player
+\end{itemize}
+}
+
+\end{minipage}
+\end{minipage}%
+%
+% RIGHT MAIN COLUMN
+\begin{minipage}[t]{\mainW}
+\vspace{0pt}
+\hspace{0.4cm}%
+\begin{minipage}[t]{\mainW-0.8cm}
+\vspace{4pt}
+
+% ---- PROFILE ----
+\mainheading{Profile}
+{\color{textgray}\footnotesize
+A motivated Computer Science student at Gisma University of Applied Sciences, Berlin, with a solid foundation in Python, web development, version control, and databases. Passionate about building clean, efficient solutions. Eager to grow through hands-on experience in a collaborative, innovative environment.
+}
+
+% ---- EDUCATION ----
+\mainheading{Education}
+
+{\color{sidecolor}\bfseries\footnotesize BSc Computer Science} \hfill {\scriptsize\color{maincolor} Oct 2024 -- Present}\\
+{\color{textgray}\footnotesize Gisma University of Applied Sciences, Berlin, Germany}
+
+\vspace{4pt}
+
+{\color{sidecolor}\bfseries\footnotesize Higher Secondary Certificate (H.S.C)} \hfill {\scriptsize\color{maincolor} Jun 2022 -- Jun 2023}\\
+{\color{textgray}\footnotesize LDR International School (Cambridge), Gandhinagar, India \quad\textbf{67\%}}
+
+\vspace{4pt}
+
+{\color{sidecolor}\bfseries\footnotesize Secondary School Certificate (S.S.C)} \hfill {\scriptsize\color{maincolor} 2020 -- 2022}\\
+{\color{textgray}\footnotesize Gandhinagar International Public School, India \quad\textbf{79\%}}
+
+% ---- CERTIFICATIONS ----
+\mainheading{Certifications}
+
+{\color{sidecolor}\bfseries\footnotesize Computer Operator \& Programming Assistant (COPA)} \hfill {\scriptsize\color{maincolor} Oct 2023 -- Oct 2024}\\
+{\color{textgray}\footnotesize Dr.\ A.P.J Abdul Kalam NISD, Mansa, India}
+
+\vspace{4pt}
+
+{\color{sidecolor}\bfseries\footnotesize Certificate in Computer Concepts (CCC)} \hfill {\scriptsize\color{maincolor} Oct 2024 -- Jan 2025}\\
+{\color{textgray}\footnotesize Dr.\ A.P.J Abdul Kalam NISD, Kalol} \hfill {\scriptsize\color{accentcolor!70!black}\bfseries Grade A}
+
+\vspace{4pt}
+
+{\color{sidecolor}\bfseries\footnotesize Tally Prime with GST} \hfill {\scriptsize\color{maincolor} Jan 2025 -- Apr 2025}\\
+{\color{textgray}\footnotesize Dr.\ A.P.J Abdul Kalam NISD, Kalol} \hfill {\scriptsize\color{accentcolor!70!black}\bfseries Grade A}
+
+\vspace{4pt}
+
+{\color{sidecolor}\bfseries\footnotesize IELTS --- Overall Band 6.5} \hfill {\scriptsize\color{maincolor} 2024}\\
+{\color{textgray}\footnotesize Listening: 7.5 \quad Reading: 6.0 \quad Writing: 6.0 \quad Speaking: 5.5}
+
+% ---- PROJECTS ----
+\mainheading{Projects}
+
+{\color{sidecolor}\bfseries\footnotesize Banking System --- Python} \hfill {\scriptsize\color{maincolor} \href{https://github.com/Ashok2803/GISMA-PYTHON-REPORT}{github.com/Ashok2803/GISMA-PYTHON-REPORT}}\\
+{\color{textgray}\footnotesize
+A CLI banking app in Python supporting customer creation, account management, deposits, withdrawals, and transfers. Features transaction logging with UUIDs, timestamps, and CSV-based data persistence.
+}\\
+{\footnotesize\color{maincolor!70!black}\textit{Skills: Python, OOP, CSV Data Persistence, CLI Design}}
+
+\vspace{5pt}
+
+{\color{sidecolor}\bfseries\footnotesize Databases \& Big Data} \hfill {\scriptsize\color{maincolor} \href{https://github.com/Ashok2803/Databases-Big-Data}{github.com/Ashok2803/Databases-Big-Data}}\\
+{\color{textgray}\footnotesize
+Coursework repository covering relational database design and big data concepts, including structured SQL exercises and data management principles as part of the Gisma CS curriculum.
+}\\
+{\footnotesize\color{maincolor!70!black}\textit{Skills: SQL, Relational Databases, Big Data Concepts}}
+
+\vspace{5pt}
+
+{\color{sidecolor}\bfseries\footnotesize CS Portfolio Website} \hfill {\scriptsize\color{maincolor} \href{https://github.com/Ashok2803}{github.com/Ashok2803}}\\
+{\color{textgray}\footnotesize
+Personal portfolio hosted on GitHub Pages showcasing projects, CV, and technical skills. Built with HTML and CSS, version-controlled with Git.
+}\\
+{\footnotesize\color{maincolor!70!black}\textit{Skills: HTML, CSS, Git, GitHub Pages}}
+
+\end{minipage}
+\end{minipage}
+
+\end{document}
